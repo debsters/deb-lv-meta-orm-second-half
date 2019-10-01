@@ -1,8 +1,6 @@
-require 'bundler/setup'
+require 'bundler'
 Bundler.require
 
-require_all 'lib'
+DB = {:conn => SQLite3::Database.new("db/blog.db")}
 
-DB = {
-  :connection => SQLite3::Database.new("db/development.sqlite")
-}
+require_all 'app'
