@@ -1,9 +1,7 @@
-class Post 
-	ATTRIBUTES = {
+class Comment
+    ATTRIBUTES = {
 		:id => "INTEGER PRIMARY KEY",
-		:title => "TEXT",
-		:content => "TEXT",
-		:author_name => "TEXT"
+		:content => "TEXT"
 	}
 
 	# def self.attributes
